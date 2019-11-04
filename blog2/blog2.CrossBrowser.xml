@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Testing">
+	<parameter name = "URL" value = "https://blog.testproject.io/" />
+      	  	  		  	
+  	<test name = "Test On Firefox">
+	  	<parameter name = "BrowserType" value = "Firefox"/>
+		  	<classes>
+	  			<class name = "testproject.blog2.CrossBrowserTesting"/>
+	  		</classes>
+  	</test> <!-- Test On Firefox -->
+  	
+   <test name = "Test On Chrome">
+		<parameter name = "BrowserType" value = "Chrome"/>
+		  	<classes>
+	  			<class name = "testproject.blog2.CrossBrowserTesting"/>
+	  		</classes>
+  	</test> <!-- Test On Chrome -->  	
+
+</suite> <!-- Cross Browser Testing -->
